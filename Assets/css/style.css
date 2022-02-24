@@ -1,70 +1,68 @@
 :root{
-    --bg: linear-gradient(rgb(98, 236, 218),rgb(19, 31, 97));
-    --pink:pink;
-    --grey:grey;
+    --Sky-grey:#D8D4D6;
+    --Black:#231F20;
+    --Rock:#585547;
+    --Cool-grey:#626B75;
+    --Forest:#27351A;
   }
+
+/* Styling applied to all */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family:'oxygen', sans-serif
+    font-family:'oxygen', sans-serif;
 }
 
-body {
-      /* font-size: 16px; */
-      /* background-color: var(--bg); */
+/* Styling applied to body */
+body{
+      background: var(--Sky-grey);
+      margin: 0;
   }
+
+  /* Styling and elements applied to header */
   header {
-    /* margin: 20px; */
     padding-top: 10px;
     margin-bottom: 20px;
-    /* text-align: left; */
-    background: var(--bg);
-    color: #fff;
+    background: var(--Cool-grey);
   }
   h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 10px;
     display: inline-block;
-    /* margin-left: 20px; */
-    background-color:gray;
-    padding:5px 5px 5px 50px;
+    background-color:var(--Black);
+    padding:17px 21px 15px 50px;
+    font-family:'Bebas Neue','oxygen', sans-serif;
+    color: var(--Sky-grey);
   }
   header h4{
-    /* padding-top: 15px; */
     float: right;
-      /* display: inline-block; */
-    font-size: 28px;
-    margin-right: 20px;
-    /* margin: auto; */
-    /* float: right; */
+    font-size: 34px;
     color: aliceblue;
   }
   header h4 ul{
-      /* list-style-type: none; */
-      /* padding-top: 15px; */
-      /* text-align: right; */
-      /* float: right; */
       list-style-type: none;
-
-
+      margin-right: 20px;
   }
   header h4 ul li{
-    /* padding-top: 15px; */
       display: inline-block;
-      /* float: right; */
-      /* margin-left: 20px; */
-      margin: 10px;
+      margin:23px 20px 20px 20px;
   }
-  header h4 ul li a:link{
-    color: rgb(22, 54, 141);
+      header h4 ul li a:link{
+      color: var(--Black);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
   }
-  header h4 ul li a:visited{
-    color: rgb(84, 110, 180);
+      header h4 ul li a:visited{
+      color: var(--Black);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
   }
-  header h4 ul li a:hover{
-    color: rgb(84, 142, 180);
+      header h4 ul li a:hover{
+      color: var(--Forest);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
   }
   header img{
     display: block;
@@ -75,67 +73,147 @@ body {
     position: relative;
 
   }
+
   .container{
     position: relative;
-    /* text-align: center; */
+    overflow: hidden;
+    flex-wrap: wrap;
   }
   .Dev{
     position: absolute;
-    /* flex-wrap: wrap; */
     bottom: 20px;
     right: 60px;
     border-radius: 10px;
     size: 300px;
-    color: darkblue;  
+    color: var(--Black);
     background-color: aliceblue;
     padding: 10px;
     font-size: 1.5rem;
+    opacity: 0.75;
+  }
 
+  /* Styling applied to main content */
+  main section{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .main{
+    display: flex;
+    min-height: calc(100vh - 40vh);
+  }
+
+  .main nav, main aside{
+    flex: 0 0 20vw;
+  }
+  .main nav{
+    order: -1;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .profile {
+    margin: 10px 10px 20px 40px;
+    max-width: 500px;
+    max-height: 150px; 
   }
   p{
-    margin-left: 50px;
-    margin-bottom: 20px;
-    font-size: 20px;
-    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 150px;
   }
-  .flex{
-    display: flex;
-    flex-wrap:wrap;
-  
+  div{
+    position: relative;
   }
-  .card{
-    flex-direction: column;
-    flex-basis: 30%;
-    margin: auto;
-    position: inline;
-  }
-  .hero{
+  div img {
       display: block;
-      flex-direction: row;
-      margin: auto;
-  }
-  .hero img{
       max-width: 100%;
-      max-height: 800px;
+      max-height: 100%;
       margin-bottom: 25px;
-      display: block;
-      background-size: cover;
-      background-position: center;
+      /* background-size: cover; */
+      /* background-position: center; */
   }
-  
-  h2{
-      font-size: 2rem;
-      margin-bottom: 10px;
-      margin-left: 20px;
+
+  article{
+    flex-wrap: wrap;
+    display: inline-block;
+
+  }
+ 
+  article h2{
       display: inline-block;
+      font-size: 1.5rem;
+      position: relative;
+      bottom: 66px;
+      border-radius: 10px;
+      color: var(--Black);
+      background-color: aliceblue;
+      padding: 10px;
+      font-size: 1.5rem;
+  }
+
+  section img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  section{
+    
+  }
+  nav h2{
+    font-size: 1.5rem;
+      margin-bottom: 500px;
+      margin-left: 20px;
   }
 
   h3 {
+    bottom: 10px;
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
-  
+  div .card{
+    max-width: 50%;
+    max-height: 100px;
+    margin-bottom: 25px;
+    display: fixed;
+    background-position: center;
+    }
 
-  pre,code{
-    background: var(--bg);
+  footer{
+    position: absolute;
+    left: 40px;
+    bottom: -1000px;
+    display: inline-block;
+    }
+  
+    footer h2{
+      display: inline-block;
+    }
+
+    footer li{
+      display: inline-block;
+    }
+    
+    footer ul{
+      list-style-type: none;
+      margin-right: 20px;
   }
+  footer ul li{
+      display: inline-block;
+      margin:23px 20px 20px 20px;
+  }
+  footer ul li a:link{
+      color: var(--Black);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
+  }
+  footer ul li a:visited{
+      color: var(--Black);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
+  }
+      footer ul li a:hover{
+      color: var(--Forest);
+      transition: 0.3s;
+      font-family:'Bebas Neue', sans-serif
+      }
