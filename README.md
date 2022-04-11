@@ -14,11 +14,10 @@
 To access my portfolio, I've added these links
 
 GitHub Repository:
-https://github.com/kieranmichaelflynn/Week2-homework.git
+https://github.com/kieranmichaelflynn/Personal-Portfolio.git
 
 GitHub Pages:
-https://kieranmichaelflynn.github.io/Week2-homework/
-
+https://kieranmichaelflynn.github.io/Personal-Portfolio/
 
 Thank you
 
