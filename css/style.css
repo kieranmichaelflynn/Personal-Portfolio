@@ -1,233 +1,255 @@
 /* My colour palette */
-:root{
-    --Sky-grey:#D8D4D6;
-    --Black:#231F20;
-    --Rock:#585547;
-    --Cool-grey:#626B75;
-    --Forest:#27351A;
-  }
+:root {
+  --Sky-grey: #D8D4D6;
+  --Black: #231F20;
+  --Rock: #585547;
+  --Cool-grey: #626B75;
+  --Forest: #27351A;
+}
 
 /* Styling applied to all */
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family:'oxygen', sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'oxygen', sans-serif;
 }
 
 /* Styling applied to body */
-body{
-      background: var(--Sky-grey);
-      margin: 0;
-  }
+body {
+  background: var(--Sky-grey);
+  margin: 0;
+}
 
-  /* Styling and elements applied to header */
-  header {
-    padding-top: 10px;
-    margin-bottom: 20px;
-    background: var(--Cool-grey);
-    position: relative;
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
-  h1{
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    display: inline-block;
-    background-color:var(--Black);
-    padding:17px 21px 15px 50px;
-    font-family:'Bebas Neue','oxygen', sans-serif;
-    color: var(--Sky-grey);
-  }
-  header h4{
-    float: right;
-    font-size: 34px;
-    color: aliceblue;
-  }
-  header h4 ul{
-      list-style-type: none;
-      margin-right: 20px;
-  }
-  header h4 ul li{
-      display: inline-block;
-      margin:23px 20px 20px 20px;
-  }
-      header h4 ul li a:link{
-      color: var(--Black);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-  }
-      header h4 ul li a:visited{
-      color: var(--Black);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-  }
-      header h4 ul li a:hover{
-      color: var(--Forest);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-  }
-  header img{
-    display: block;
-    object-fit: cover;
-    margin: none;
-    max-height: 200px;
-    width: 100%;
-    position: relative;
+/* Styling and elements applied to header */
+header {
+  padding-top: 10px;
+  margin-bottom: 20px;
+  background: var(--Cool-grey);
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
 
-  }
-  .Dev{
-    position: absolute;
-    bottom: 20px;
-    right: 60px;
-    border-radius: 10px;
-    size: 300px;
-    color: var(--Black);
-    background-color: aliceblue;
-    padding: 10px;
-    font-size: 1.5rem;
-    opacity: 0.75;
-  }
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: var(--Black);
+  padding: 17px 21px 15px 50px;
+  font-family: 'Bebas Neue', 'oxygen', sans-serif;
+  color: var(--Sky-grey);
+}
 
+header h4 {
+  float: right;
+  font-size: 34px;
+  color: aliceblue;
+}
 
+header h4 ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
 
+header h4 ul li {
+  display: inline-block;
+  margin: 23px 20px 20px 20px;
+}
 
-  /* Styling applied to main content */
-  main {
-    display: flex;
-    min-height: calc(100vh - 40vh);
-  }
-  main section{
-    flex-wrap: wrap;
-    display: flex;
-  }
-  p {
-    margin-top: 20px;
-    font-size: 18px;
-    margin-bottom: 150px;
-  }
-  main nav{
-    flex: 0 0 20vw;
-    order: -1;
-    margin-left: 30px;
-    margin-top: 20px;
-  }
-  main aside{
-    flex: 0 0 20vw;
-  }
+header h4 ul li a:link {
+  color: var(--Black);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
 
-  .profile {
-    margin: 10px 10px 20px 40px;
-    max-width: 500px;
-    max-height: 150px; 
-  }
+header h4 ul li a:visited {
+  color: var(--Black);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
 
-  div{
-    position: relative;
-  }
-  div img {
-      display: block;
-      max-width: 100%;
-      margin-bottom: 25px;
-  }
+header h4 ul li a:hover {
+  color: var(--Forest);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
 
-  article{
-    flex-wrap: wrap;
-    display: inline-block;
+header img {
+  display: block;
+  object-fit: cover;
+  margin: none;
+  max-height: 200px;
+  width: 100%;
+  position: relative;
 
-  }
- 
-  article h2{
-      display: inline-block;
-      font-size: 1.5rem;
-      position: relative;
-      bottom: 66px;
-      border-radius: 10px;
-      color: var(--Black);
-      background-color: aliceblue;
-      padding: 10px;
-      font-size: 1.5rem;
-  }
-  article section{
-    max-width: 40%;
-    max-height: 100px;
-    margin-bottom: 25px;
-    background-position: center;
-    flex-wrap: wrap;
-  }
-  article img {
-    transition: 0.3s;
+}
 
-  }
-  article img:hover {
-    opacity: 0.3;
-    transition: 0.3s;
-  }
-  article section img{
-    max-width: 400px;
-    max-height: 400px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  article section ul li {
-    list-style: none;
-    display: inline-block;
-  }
-  nav h2{
-    font-size: 1.5rem;
-      margin-bottom: 500px;
-      margin-left: 20px;
-  }
-
-  h3 {
-    bottom: 10px;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
+.Dev {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  border-radius: 10px;
+  size: 300px;
+  color: var(--Black);
+  background-color: aliceblue;
+  padding: 10px;
+  font-size: 1.5rem;
+  opacity: 0.75;
+}
 
 
-  footer{
-    position: relative;
-    left: 40px;
-    bottom: -300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding-bottom: 50px;
-    }
-  
-    footer h2{
-      display: inline-block;
-    }
 
-    footer ul li{
-      font-size: 1.5rem;
-      display: inline;
-      margin: -25px 300px 20px 300px; 
-      size: 1.5rem;
-    }
-    
-    footer ul{
-      list-style-type: none;
-      display: flex;
-      letter-spacing: 2px;
 
-      margin-right: 20px;
-  }
+/* Styling applied to main content */
+main {
+  display: flex;
+  min-height: calc(100vh - 40vh);
+}
 
-  footer ul li a:link{
-      color: var(--Black);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-  }
-  footer ul li a:visited{
-      color: var(--Black);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-  }
-      footer ul li a:hover{
-      color: var(--Forest);
-      transition: 0.3s;
-      font-family:'Bebas Neue', sans-serif
-      }
+main section {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 150px;
+}
+
+main nav {
+  flex: 0 0 20vw;
+  order: -1;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+main aside {
+  flex: 0 0 20vw;
+}
+
+.profile {
+  margin: 10px 10px 20px 40px;
+  max-width: 500px;
+  max-height: 150px;
+}
+
+div {
+  position: relative;
+}
+
+div img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 25px;
+}
+
+article {
+  flex-wrap: wrap;
+  display: inline-block;
+
+}
+
+article h2 {
+  display: inline-block;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 66px;
+  border-radius: 10px;
+  color: var(--Black);
+  background-color: aliceblue;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+article section {
+  max-width: 40%;
+  max-height: 100px;
+  margin-bottom: 25px;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+article img {
+  transition: 0.3s;
+
+}
+
+article img:hover {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+article section img {
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+article section ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav h2 {
+  font-size: 1.5rem;
+  margin-bottom: 500px;
+  margin-left: 20px;
+}
+
+h3 {
+  bottom: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+
+footer {
+  position: relative;
+  left: 40px;
+  bottom: -300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-bottom: 50px;
+}
+
+footer h2 {
+  display: inline-block;
+}
+
+footer ul li {
+  font-size: 1.5rem;
+  display: inline;
+  margin: -25px 300px 20px 300px;
+  size: 1.5rem;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  letter-spacing: 2px;
+
+  margin-right: 20px;
+}
+
+footer ul li a:link {
+  color: var(--Black);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
+
+footer ul li a:visited {
+  color: var(--Black);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
+
+footer ul li a:hover {
+  color: var(--Forest);
+  transition: 0.3s;
+  font-family: 'Bebas Neue', sans-serif
+}
